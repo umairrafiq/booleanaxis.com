@@ -1,0 +1,28 @@
+/* Shared by the Drive Ready pages. Palette from the Boolean Axis logo. */
+:root { --bg: #050a17; --fg: #e9ecf3; --muted: #8a93a8; --line: #1b2236; --cyan: #00e5ff; --violet: #b026ff; --pink: #ff2a7a; }
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 400 16px/1.7 Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+header.site { display: flex; align-items: center; gap: 12px; margin-bottom: 32px; }
+header.site img { width: 36px; height: 36px; }
+header.site a { color: var(--fg); text-decoration: none; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; font-size: .9rem; }
+nav.app { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: -16px 0 32px; font-size: .9rem; }
+nav.app a { color: var(--muted); text-decoration: none; }
+nav.app a:hover, nav.app a[aria-current] { color: var(--fg); }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 4px; letter-spacing: -.01em; }
+.meta { color: var(--muted); margin: 0 0 32px; }
+h2 { font-size: 1.15rem; margin: 32px 0 8px; }
+ul { padding-left: 1.2em; }
+a { color: var(--cyan); }
+.lede { font-size: 1.1rem; color: var(--muted); }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 28px 0; }
+.cards a { display: block; padding: 16px; border: 1px solid var(--line); border-radius: 12px; color: var(--fg); text-decoration: none; }
+.cards a:hover { border-color: var(--violet); }
+.cards strong { display: block; }
+.cards span { color: var(--muted); font-size: .9rem; }
+.note { border-left: 3px solid var(--pink); padding: 4px 0 4px 14px; color: var(--fg); }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
+footer a { color: var(--muted); }
