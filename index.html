@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boolean Axis</title>
+<meta name="description" content="Boolean Axis — something new is taking shape.">
+<meta property="og:title" content="Boolean Axis">
+<meta property="og:description" content="Boolean Axis — something new is taking shape.">
+<meta property="og:url" content="https://booleanaxis.com/">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#050a17">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  /* Palette taken from the logo (brand/booleanaxis-logo.svg). The logo is drawn
+     on near-black, so the page is dark in both colour schemes. */
+  :root {
+    --bg: #050a17;
+    --fg: #ffffff;
+    --muted: #8a93a8;
+    --cyan: #00e5ff;
+    --violet: #b026ff;
+    --pink: #ff2a7a;
+    --grid: rgba(176, 38, 255, 0.07);
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font: 400 16px/1.6 Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    background-image:
+      radial-gradient(ellipse at 50% 38%, rgba(176, 38, 255, 0.16), transparent 60%),
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 100% 100%, 48px 48px, 48px 48px;
+    background-position: center;
+  }
+  main {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 40px 16px;
+  }
+  .mark {
+    width: min(420px, 86vw);
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  h1 {
+    font-weight: 800;
+    font-size: clamp(1.6rem, 6vw, 2.6rem);
+    letter-spacing: 0.22em;
+    /* letter-spacing trails the last glyph; pull it back so the title centres */
+    margin: 18px -0.22em 0 0;
+    text-transform: uppercase;
+  }
+  p.lede {
+    color: var(--muted);
+    margin-top: 18px;
+    font-size: 1.05rem;
+  }
+  a.contact {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--fg);
+    text-decoration: none;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    background:
+      linear-gradient(var(--bg), var(--bg)) padding-box,
+      linear-gradient(90deg, var(--cyan), var(--violet), var(--pink)) border-box;
+    transition: box-shadow .2s;
+  }
+  a.contact:hover, a.contact:focus-visible {
+    box-shadow: 0 0 18px rgba(176, 38, 255, 0.55);
+    outline: none;
+  }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.8rem;
+    padding: 20px 16px 28px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <div>
+    <img class="mark" src="brand/booleanaxis-mark.svg" width="410" height="350" alt="Boolean Axis logo: an isometric cube showing 0 and 1 at the origin of X, Y and Z axes">
+    <h1>Boolean Axis</h1>
+    <p class="lede">Something new is taking shape. Our full site is on its way.</p>
+    <a class="contact" href="mailto:support@booleanaxis.com">support@booleanaxis.com</a>
+  </div>
+</main>
+<footer>&copy; <span id="y">2026</span> Boolean Axis</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

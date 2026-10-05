@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 -55 100 110">
+<rect x="-50" y="-55" width="100" height="110" rx="18" fill="#050a17"/>
+<g>
+      <!-- Solid Top Face -->
+      <polygon points="0,-45 38.97,-22.5 0,0 -38.97,-22.5" fill="#050a17" stroke="#b026ff" stroke-width="2.5" stroke-linejoin="round"/>
+      
+      <!-- Solid Left Face -->
+      <polygon points="-38.97,-22.5 0,0 0,45 -38.97,22.5" fill="#050a17" stroke="#00e5ff" stroke-width="2.5" stroke-linejoin="round"/>
+      
+      <!-- Solid Right Face -->
+      <polygon points="0,0 38.97,-22.5 38.97,22.5 0,45" fill="#050a17" stroke="#ff2a7a" stroke-width="2.5" stroke-linejoin="round"/>
+    </g>
+<!-- Left Face ("0") -->
+    <g transform="translate(-19.48, 11.25) skewY(30) scale(0.866, 1)">
+      <!-- Inner bounding box -->
+      <rect x="-16" y="-18" width="32" height="36" fill="none" stroke="#00e5ff" stroke-width="1.5"/>
+      <!-- The Zero -->
+      <text x="0" y="2" font-family="monospace" font-size="34" font-weight="bold" fill="#00e5ff" text-anchor="middle" dominant-baseline="middle">0</text>
+    </g>
+
+    <!-- Right Face ("1") -->
+    <g transform="translate(19.48, 11.25) skewY(-30) scale(0.866, 1)">
+      <!-- Inner bounding box -->
+      <rect x="-16" y="-18" width="32" height="36" fill="none" stroke="#ff2a7a" stroke-width="1.5"/>
+      <!-- The One -->
+      <text x="0" y="2" font-family="monospace" font-size="34" font-weight="bold" fill="#ff2a7a" text-anchor="middle" dominant-baseline="middle">1</text>
+    </g>
+</svg>
